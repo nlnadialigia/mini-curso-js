@@ -77,7 +77,7 @@ tag`Hello ${ a + b } world ${ a * b}`;
 ---
 ### :pushpin: Aula 03
 
-
+Nesta aula foram utilizados os conceitos aprendidos nas aulas anteriores para a estilização do *body* e a criação do personagem.
 ---
 ### :pushpin: Aula 04
 
