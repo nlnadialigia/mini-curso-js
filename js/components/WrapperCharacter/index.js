@@ -1,8 +1,8 @@
-const pathGueio = 'images/gueio.png'
-const gueio = Character`
+const pathJelly = 'images/jelly.png'
+const jelly = Character`
     width: 10%;
     margin-top: 90px;
-    ${pathGueio}
+    ${pathJelly}
 `
 const WrapperCharacters = (css, children) => (`
     <div style="${css}">${children}</div>    
@@ -11,5 +11,5 @@ const WrapperCharacters = (css, children) => (`
 const wrapperCharacters = WrapperCharacters`
     display: flex;
     justify-content: space-evenly;
-    ${gueio+gueio+gueio}
+    ${jelly+jelly+jelly}
 `

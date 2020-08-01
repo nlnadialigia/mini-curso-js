@@ -1,47 +1,60 @@
 const states = [true, false, false]
 
 function showItems(stateItems) {    
-    const item = Item`
+    const item = (pos) => Item`
         .item{
             list-style: none;
             height: calc(var(--line-height)*3);
             width: calc(var(--line-height)*3);
             background-color: var(--slide-color); 
+            border-radius: 26px;
             transition: transform 100ms linear;
             cursor: pointer;
         }
+        ${`pos-${pos}`}
         `
 
-    const itemActive = Item`
+    const itemActive = (pos) => Item`
        .item.active{
             transform: scale(1.6);
         }
 
-        ${'active'}
+        ${`active pos-${pos}`}
     
     `
 
-    const items = stateItems.map(state =>{
+    const items = stateItems.map((state, index) =>{
         if (state) {
-            return itemActive
-        } else {
-            return item
+            return itemActive(index+1)
         }
+        return item(index+1)
     })
-
-    console.log(items.join(''));
-
     return items.join('')
 }
 
-function handleClick() {
+function clearAction(action) {
+    action.classList.remove('second')
+    action.classList.remove('third')
+}
+
+function handleClick(event) {
     const {target} = event
     const allItems = document.querySelectorAll('.item')
-
     const action = document.querySelector('.action')
 
     allItems.forEach(item => item.classList.remove('active'))
     target.classList.add('active')
+
+    clearAction(action)
+
+    if (target.classList.contains('pos-2')){
+        action.classList.add('second')
+    }
+
+    if (target.classList.contains('pos-3')){
+        action.classList.add('third')
+    }
+
 }
 
 function createStyle(css) {
@@ -68,7 +81,7 @@ const Item = (css, className) => {
 
     return (`
     <li 
-        class="item" ${className}
+        class="item ${className}"
         onclick="handleClick(event)">
     </li>
 `)}
@@ -80,19 +93,22 @@ const Slide = (css, content = '') => (
 const action = Action`
     .action{
         list-style: none;
+        background-color: var(--action-color);
+        border: 5px solid var(--title-color);
+        border-radius: 30px;
         height: calc(var(--line-height)*4);
         width: calc(var(--line-height)*4);
-        background-color: var(--action-color);
         position: absolute;
-        left: -5px;
+        left: -10px;
+        transition: transform 300ms linear;
     }
 
     .action.second{
-        transform: translateX(268px);
+        transform: translateX(425px);
     }
 
     .action.third{
-        transform: translateX(540px);
+        transform: translateX(582px);
     }
 `
 

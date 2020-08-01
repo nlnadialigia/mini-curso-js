@@ -4,6 +4,8 @@ const css =
         --line-height: 10px;
         --slide-color: #ffd32a;
         --action-color: #ffeaa7;
+        --title-color: #B33771;
+        --bg-color: #182C61;
     }
 
     *{
@@ -26,9 +28,10 @@ const css =
         align-items: center;
         justify-content: space-around;
         box-sizing: border-box;
-        background-color: #3c40c6;
-        border: 25px solid black;
-        font-family: 'Press Start 2P', cursive;
+        background-color: var(--bg-color);
+        border: 1px solid black;
+        box-shadow: inset 0 0 2em silver, 0 0 2em var(--title-color);
+        font-family: 'Rowdies', cursive;
         width: 40vw;
         min-width: 768px;
         height: 65vh;

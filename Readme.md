@@ -82,7 +82,7 @@ Nesta aula foram utilizados os conceitos aprendidos nas aulas anteriores para a 
 ---
 ### :pushpin: Aula 04
 
-
+Nesta aula foram realizados os últimos ajustes para a movimentação da bolinha e da imagem.
 
 
 --- 
