@@ -44,6 +44,7 @@ function handleClick(event) {
 
     allItems.forEach(item => item.classList.remove('active'))
     target.classList.add('active')
+    
 
     clearAction(action)
 
@@ -96,19 +97,19 @@ const action = Action`
         background-color: var(--action-color);
         border: 5px solid var(--title-color);
         border-radius: 30px;
-        height: calc(var(--line-height)*4);
-        width: calc(var(--line-height)*4);
+        height: calc(var(--line-height)*3);
+        width: calc(var(--line-height)*3);
         position: absolute;
-        left: -10px;
-        transition: transform 300ms linear;
+        left: -5px;
+        transition: transform 500ms linear;
     }
 
     .action.second{
-        transform: translateX(425px);
+        transform: translateX(225px);
     }
 
     .action.third{
-        transform: translateX(582px);
+        transform: translateX(448px);
     }
 `
 

@@ -82,7 +82,13 @@ Nesta aula foram utilizados os conceitos aprendidos nas aulas anteriores para a 
 ---
 ### :pushpin: Aula 04
 
-Nesta aula foram realizados os últimos ajustes para a movimentação da bolinha e da imagem.
+Nesta aula foram realizados os últimos ajustes para a movimentação da bolinha.
+
+A imagem ficou como desafio e assim que eu conseguir eu posto aqui! :wink:
+
+### :pushpin: Última informação...
+
+Ficou interessado? Assista as aulas no Twich: [Mini curso de JavaScript feliz](https://www.twitch.tv/collections/ytNmp6EnJBbSoQ)
 
 
 --- 

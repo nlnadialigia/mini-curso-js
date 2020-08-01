@@ -15,11 +15,17 @@ const css =
     }
 
     body{
-        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
         background-color: #1e272e;
-        justify-content: center;
-        height: 100vh;
-        align-items: center;
+        height: 600px;
+        width: 600px;
+        transform: translate(-50%, -50%)
+    
+        
+        
     }
 
     #root {
@@ -32,8 +38,8 @@ const css =
         border: 1px solid black;
         box-shadow: inset 0 0 2em silver, 0 0 2em var(--title-color);
         font-family: 'Rowdies', cursive;
-        width: 40vw;
-        min-width: 768px;
+        
+        
         height: 65vh;
         text-align: center;
         padding-top: 4rem;

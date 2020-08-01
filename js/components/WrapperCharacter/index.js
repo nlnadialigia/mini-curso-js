@@ -1,6 +1,6 @@
 const pathJelly = 'images/jelly.png'
 const jelly = Character`
-    width: 10%;
+    width: 20%;
     margin-top: 90px;
     ${pathJelly}
 `
@@ -13,3 +13,5 @@ const wrapperCharacters = WrapperCharacters`
     justify-content: space-evenly;
     ${jelly+jelly+jelly}
 `
+
+
